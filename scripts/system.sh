@@ -1,6 +1,10 @@
 # Install Vim editor
 apt-get install -y vim
 
+# Create a folder for local scripts
+mkdir /home/vagrant/bin
+chown vagrant:vagrant /home/vagrant/bin
+
 # Customize Bash settings.
 cat <<EOF > /home/vagrant/.bashrc
 # Colorize the prompt.
@@ -48,5 +52,5 @@ VISUAL=vim; export VISUAL
 EDITOR=vim; export EDITOR
 
 # Append /usr/local/bin to the path.
-export PATH=/usr/local/bin:/usr/local/share/python/:\$PATH
+export PATH=/home/vagrant/bin:/usr/local/bin:\$PATH
 EOF
