@@ -76,6 +76,7 @@
                         "scripts/vagrant.sh",
                         "scripts/virtualbox.sh",
                         "scripts/docker.sh",
+                        "scripts/desktop.sh",
                         "scripts/java.sh",
                         "scripts/eclipse.sh",
                         "scripts/lein.sh",
